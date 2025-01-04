@@ -6,7 +6,7 @@ const Calculator: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleClick = (symbol: string) => {
-    if(symbol == '<'){
+    if(symbol === '<'){
         if(display.length === 1){
             setDisplay('0')
         }else{
@@ -14,7 +14,7 @@ const Calculator: React.FC = () => {
         }
     }
 
-    if(symbol == 'C'){
+    if(symbol === 'C'){
         setDisplay('0');
         setErrorMessage("")
     }
